@@ -1,0 +1,237 @@
+@use 'sass:math';
+@use 'sass:list';
+
+$fira-code-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $weight in $fira-code-weights {
+  .fira-code-#{$weight} {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root{
+  --kendo-font-family: Fira Sans;
+}
+
+body{
+  font-family: 'Fira Sans', 'Fira Code', sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.report-window-drawer.k-window{
+  .k-window-titlebar-actions{
+    .k-window-titlebar-action:not([aria-label=close]){
+      display: none!important;
+    }
+  }
+}
+
+.datagrid-filter-element{
+  .k-filter-container{
+    .k-filter-lines{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      gap: 10px; /* Optional: adds spacing between items */
+      .k-filter-item{
+        list-style: none;
+        padding: 8px 12px;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.top-toolbar-wrapper{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.top-toolbar{
+  display: flex;
+  gap: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  li{
+    list-style: none;
+  }
+}
+
+.top-toolbar-wrapper{
+  display: flex;
+  
+  .top-toolbar-inner-wrapper{
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: row-reverse;
+  }
+  .top-toolbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.column-selection-popup{
+  .k-child-animation-container{
+    .common-popup{
+      padding: 10px;
+      min-width: 240px;
+    }
+  }
+}
+
+sti-bookmarks-panel{
+  display: none;
+}
+.k-filter.datagrid-filter-element{
+  .k-filter-container{
+    .k-filter-toolbar{
+      button[title="Add Group"]{
+        display: none;
+      }
+    }
+  }
+}
+
+.employee-inner-page{
+  .k-filter-container{
+    margin-bottom: 0;
+  }
+  .k-numeric-field{
+    text-align: right;
+  }
+  .k-table-th.k-header.k-filterable.k-numeric-field{
+    .k-grid-header-menu.k-grid-column-menu{
+      // position: absolute;
+      right: 0;
+    }
+    .k-link{
+      justify-content: flex-end;
+    }
+  }
+}
+
