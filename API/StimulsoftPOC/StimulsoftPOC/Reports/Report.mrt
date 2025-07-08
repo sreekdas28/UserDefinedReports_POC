@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <GridData Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObjectSource" isKey="true">
+        <Alias>GridData</Alias>
+        <Columns isList="true" count="14">
+          <value>Id,System.Int32</value>
+          <value>OrderNumber,System.String</value>
+          <value>ItemCode,System.String</value>
+          <value>ItemDescription,System.String</value>
+          <value>Quantity,System.Int32</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>VendorName,System.String</value>
+          <value>VendorCode,System.String</value>
+          <value>VendorContact,System.String</value>
+          <value>OrderStatus,System.String</value>
+          <value>OrderedDate,System.DateTime</value>
+          <value>LineAmt,System.Decimal</value>
+          <value>_ID,System.Int32</value>
+          <value>_Current,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>4f7417b300b04972a8f02f1a9f4379e1</Key>
+        <Name>GridData</Name>
+        <NameInSource>GridData</NameInSource>
+      </GridData>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <UserFunctions isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>3a8bffe422684e51983167e647f06056</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <TitleBand Ref="4" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,0,2.5</ClientRectangle>
+          <Components isList="true" count="2">
+            <Title Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Name>Title</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Purchase Order Report</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Title>
+            <ReportDate Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.67,2,6.33,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>ReportDate</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Report Date: 07-Jul-2025 10:42:08 AM</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Bottom</VertAlignment>
+            </ReportDate>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>TitleBand</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </TitleBand>
+        <TitleBorderLine Ref="7" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0,2.55,19,0.0254</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="8" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Expressions isList="true" count="0" />
+          <Name>TitleBorderLine</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="9" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </TitleBorderLine>
+        <HeaderBand Ref="10" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,0,1</ClientRectangle>
+          <Components isList="true" count="22">
+            <HeaderText_Order_x0020_Number Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0.07,1.7,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Order Number</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Order Number</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Order_x0020_Number>
+            <GroupHeaderBand_Order_x0020_Number Ref="12" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="13" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Order Number</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="14" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Order_x0020_Number>
+            <HeaderText_Item_x0020_Code Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.7,0.07,1.87,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Item Code</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Item Code</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Item_x0020_Code>
+            <GroupHeaderBand_Item_x0020_Code Ref="16" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="17" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Item Code</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="18" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Item_x0020_Code>
+            <HeaderText_Item_x0020_Description Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.58,0.07,2.3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Item Description</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Item Description</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Item_x0020_Description>
+            <GroupHeaderBand_Item_x0020_Description Ref="20" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="21" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Item Description</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="22" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Item_x0020_Description>
+            <HeaderText_Quantity Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.88,0.07,2.13,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>HeaderText_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Quantity</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Quantity>
+            <GroupHeaderBand_Quantity Ref="24" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="25" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="26" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Quantity>
+            <HeaderText_Unit_x0020_Price Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8.01,0.07,1.28,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>HeaderText_Unit Price</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Unit Price</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Unit_x0020_Price>
+            <GroupHeaderBand_Unit_x0020_Price Ref="28" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="29" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Unit Price</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="30" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Unit_x0020_Price>
+            <HeaderText_Vendor_x0020_Name Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.29,0.07,1.96,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Vendor Name</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Vendor Name</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Vendor_x0020_Name>
+            <GroupHeaderBand_Vendor_x0020_Name Ref="32" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="33" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Vendor Name</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="34" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Vendor_x0020_Name>
+            <HeaderText_Vendor_x0020_Code Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.25,0.07,1.96,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Vendor Code</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Vendor Code</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Vendor_x0020_Code>
+            <GroupHeaderBand_Vendor_x0020_Code Ref="36" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="37" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Vendor Code</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="38" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Vendor_x0020_Code>
+            <HeaderText_Vendor_x0020_Contact Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13.21,0.07,1.96,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Vendor Contact</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Vendor Contact</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Vendor_x0020_Contact>
+            <GroupHeaderBand_Vendor_x0020_Contact Ref="40" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="41" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Vendor Contact</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="42" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Vendor_x0020_Contact>
+            <HeaderText_Order_x0020_Status Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.17,0.07,1.28,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Order Status</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Order Status</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Order_x0020_Status>
+            <GroupHeaderBand_Order_x0020_Status Ref="44" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="45" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Order Status</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="46" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Order_x0020_Status>
+            <HeaderText_Ordered_x0020_Date Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.44,0.07,1.28,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>HeaderText_Ordered Date</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Ordered Date</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Ordered_x0020_Date>
+            <GroupHeaderBand_Ordered_x0020_Date Ref="48" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="49" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Ordered Date</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="50" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Ordered_x0020_Date>
+            <HeaderText_Line_x0020_Amount Ref="51" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>17.72,0.07,1.28,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>HeaderText_Line Amount</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <Text>Line Amount</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderText_Line_x0020_Amount>
+            <GroupHeaderBand_Line_x0020_Amount Ref="52" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.12,19,0.0254</ClientRectangle>
+              <Color>Gray</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="53" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Expressions isList="true" count="0" />
+              <Name>GroupHeaderBand_Line Amount</Name>
+              <Page isRef="3" />
+              <Parent isRef="10" />
+              <StartCap Ref="54" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </GroupHeaderBand_Line_x0020_Amount>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderBand>
+        <DataBand Ref="55" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0,0,0.5</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text_OrderNumber Ref="56" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0.07,1.7,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_OrderNumber</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.OrderNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_OrderNumber>
+            <Text_ItemCode Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.7,0.07,1.87,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_ItemCode</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.ItemCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_ItemCode>
+            <Text_ItemDescription Ref="58" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.58,0.07,2.3,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_ItemDescription</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.ItemDescription}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_ItemDescription>
+            <Text_Quantity Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.88,0.07,2.13,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>Text_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.Quantity}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text_Quantity>
+            <Text_UnitPrice Ref="60" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.01,0.07,1.28,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>Text_UnitPrice</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.UnitPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text_UnitPrice>
+            <Text_VendorName Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.29,0.07,1.96,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_VendorName</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.VendorName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_VendorName>
+            <Text_VendorCode Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.25,0.07,1.96,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_VendorCode</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.VendorCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_VendorCode>
+            <Text_VendorContact Ref="63" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13.21,0.07,1.96,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_VendorContact</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.VendorContact}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_VendorContact>
+            <Text_OrderStatus Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.17,0.07,1.28,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_OrderStatus</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.OrderStatus}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_OrderStatus>
+            <Text_OrderedDate Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.44,0.07,1.28,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>2,0,0,0</Margins>
+              <Name>Text_OrderedDate</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.OrderedDate.ToString("dd-MMM-yyyy")}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text_OrderedDate>
+            <Text_LineAmt Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.72,0.07,1.28,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>Text_LineAmt</Name>
+              <Page isRef="3" />
+              <Parent isRef="55" />
+              <Text>{GridData.LineAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text_LineAmt>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>GridData</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand>
+        <FooterBand Ref="67" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,0,0.5</ClientRectangle>
+          <Components isList="true" count="1">
+            <Footer Ref="68" type="Text" isKey="true">
+              <Border>Top;Black;0.5;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Name>Footer</Name>
+              <Page isRef="3" />
+              <Parent isRef="67" />
+              <Text>Page {PageNumber} of {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Footer>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBand</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </FooterBand>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>30b79f7c64dc49ff8914eb02a9958d71</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/7/2025 10:42:08 AM</ReportChanged>
+  <ReportCreated>7/7/2025 10:42:08 AM</ReportCreated>
+  <ReportGuid>629a21a80cd742a09a4cc553b3b2d0fe</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2025.2.5.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

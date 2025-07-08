@@ -1,0 +1,105 @@
+[
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "DesignReport",
+    "RelativePath": "api/StimulSoft/DesignReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "GenerateReport",
+    "RelativePath": "api/StimulSoft/GenerateReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "StimulsoftPOC.GridRequest\u00601[[StimulsoftPOC.PurchaseOrder, StimulsoftPOC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "GetGridData",
+    "RelativePath": "api/StimulSoft/GetGridData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Kendo.Mvc.UI.DataSourceRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "GetReport",
+    "RelativePath": "api/StimulSoft/GetReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "InitViewer",
+    "RelativePath": "api/StimulSoft/InitViewer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "ViewerEvent",
+    "RelativePath": "api/StimulSoft/ViewerEvent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.StimulSoftController",
+    "Method": "ViewerInteraction",
+    "RelativePath": "api/StimulSoft/ViewerInteraction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StimulsoftPOC.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[StimulsoftPOC.WeatherForecast, StimulsoftPOC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
